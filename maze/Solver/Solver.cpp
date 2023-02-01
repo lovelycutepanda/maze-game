@@ -4,6 +4,7 @@
 
 
 #include "Solver.h"
+#include "../Board/MachineBoard.h"
 #include <vector>
 
 Solver::Solver(const int row, const int col, std::vector<std::vector<bool>>& verticalBorder, 

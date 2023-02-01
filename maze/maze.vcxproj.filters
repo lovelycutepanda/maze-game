@@ -39,88 +39,88 @@
     <ClCompile Include="MainFrame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Board\Board.cpp">
+      <Filter>Source Files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver\AStarSolver.cpp">
+      <Filter>Source Files\Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver\BFSSolver.cpp">
+      <Filter>Source Files\Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver\DFSSolver.cpp">
+      <Filter>Source Files\Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver\Solver.cpp">
+      <Filter>Source Files\Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator\DFSGenerator.cpp">
+      <Filter>Source Files\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator\Generator.cpp">
+      <Filter>Source Files\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator\KruskalGenerator.cpp">
+      <Filter>Source Files\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator\PrimGenerator.cpp">
+      <Filter>Source Files\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator\WilsonGenerator.cpp">
+      <Filter>Source Files\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="Board\MachineBoard.cpp">
+      <Filter>Source Files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Board\PlayerBoard.cpp">
+      <Filter>Source Files\Board</Filter>
+    </ClCompile>
     <ClCompile Include="DisjointSet.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Board.cpp">
-      <Filter>Source Files\Board</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerBoard.cpp">
-      <Filter>Source Files\Board</Filter>
-    </ClCompile>
-    <ClCompile Include="MachineBoard.cpp">
-      <Filter>Source Files\Board</Filter>
-    </ClCompile>
-    <ClCompile Include="AStarSolver.cpp">
-      <Filter>Source Files\Solver</Filter>
-    </ClCompile>
-    <ClCompile Include="BFSSolver.cpp">
-      <Filter>Source Files\Solver</Filter>
-    </ClCompile>
-    <ClCompile Include="DFSSolver.cpp">
-      <Filter>Source Files\Solver</Filter>
-    </ClCompile>
-    <ClCompile Include="Solver.cpp">
-      <Filter>Source Files\Solver</Filter>
-    </ClCompile>
-    <ClCompile Include="DFSGenerator.cpp">
-      <Filter>Source Files\Generator</Filter>
-    </ClCompile>
-    <ClCompile Include="Generator.cpp">
-      <Filter>Source Files\Generator</Filter>
-    </ClCompile>
-    <ClCompile Include="KruskalGenerator.cpp">
-      <Filter>Source Files\Generator</Filter>
-    </ClCompile>
-    <ClCompile Include="PrimGenerator.cpp">
-      <Filter>Source Files\Generator</Filter>
-    </ClCompile>
-    <ClCompile Include="WilsonGenerator.cpp">
-      <Filter>Source Files\Generator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainFrame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Board\Board.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver\AStarSolver.h">
+      <Filter>Header Files\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver\BFSSolver.h">
+      <Filter>Header Files\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver\DFSSolver.h">
+      <Filter>Header Files\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver\Solver.h">
+      <Filter>Header Files\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator\DFSGenerator.h">
+      <Filter>Header Files\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator\Generator.h">
+      <Filter>Header Files\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator\KruskalGenerator.h">
+      <Filter>Header Files\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator\PrimGenerator.h">
+      <Filter>Header Files\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator\WilsonGenerator.h">
+      <Filter>Header Files\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Board\MachineBoard.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Board\PlayerBoard.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
     <ClInclude Include="DisjointSet.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerBoard.h">
-      <Filter>Header Files\Board</Filter>
-    </ClInclude>
-    <ClInclude Include="MachineBoard.h">
-      <Filter>Header Files\Board</Filter>
-    </ClInclude>
-    <ClInclude Include="Board.h">
-      <Filter>Header Files\Board</Filter>
-    </ClInclude>
-    <ClInclude Include="DFSSolver.h">
-      <Filter>Header Files\Solver</Filter>
-    </ClInclude>
-    <ClInclude Include="AStarSolver.h">
-      <Filter>Header Files\Solver</Filter>
-    </ClInclude>
-    <ClInclude Include="BFSSolver.h">
-      <Filter>Header Files\Solver</Filter>
-    </ClInclude>
-    <ClInclude Include="Solver.h">
-      <Filter>Header Files\Solver</Filter>
-    </ClInclude>
-    <ClInclude Include="Generator.h">
-      <Filter>Header Files\Generator</Filter>
-    </ClInclude>
-    <ClInclude Include="KruskalGenerator.h">
-      <Filter>Header Files\Generator</Filter>
-    </ClInclude>
-    <ClInclude Include="DFSGenerator.h">
-      <Filter>Header Files\Generator</Filter>
-    </ClInclude>
-    <ClInclude Include="PrimGenerator.h">
-      <Filter>Header Files\Generator</Filter>
-    </ClInclude>
-    <ClInclude Include="WilsonGenerator.h">
-      <Filter>Header Files\Generator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

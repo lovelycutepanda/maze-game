@@ -10,7 +10,7 @@
 #include <wx/wx.h>
 #include "PlayerBoard.h"
 #include <vector>
-#include "MainFrame.h" // for setting status bar text
+#include "../MainFrame.h" // for setting status bar text
 
 PlayerBoard::PlayerBoard(wxWindow* parent, const int row, const int col, 
                          std::vector<std::vector<bool>>&verticalBorder, 

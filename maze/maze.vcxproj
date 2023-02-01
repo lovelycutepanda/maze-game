@@ -144,37 +144,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AStarSolver.cpp" />
-    <ClCompile Include="BFSSolver.cpp" />
-    <ClCompile Include="DFSGenerator.cpp" />
-    <ClCompile Include="DFSSolver.cpp" />
+    <ClCompile Include="Solver\AStarSolver.cpp" />
+    <ClCompile Include="Solver\BFSSolver.cpp" />
+    <ClCompile Include="Generator\DFSGenerator.cpp" />
+    <ClCompile Include="Solver\DFSSolver.cpp" />
     <ClCompile Include="DisjointSet.cpp" />
-    <ClCompile Include="Generator.cpp" />
-    <ClCompile Include="KruskalGenerator.cpp" />
-    <ClCompile Include="MachineBoard.cpp" />
+    <ClCompile Include="Generator\Generator.cpp" />
+    <ClCompile Include="Generator\KruskalGenerator.cpp" />
+    <ClCompile Include="Board\MachineBoard.cpp" />
     <ClCompile Include="MainFrame.cpp" />
-    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Board\Board.cpp" />
     <ClCompile Include="MazeApp.cpp" />
-    <ClCompile Include="PlayerBoard.cpp" />
-    <ClCompile Include="PrimGenerator.cpp" />
-    <ClCompile Include="Solver.cpp" />
-    <ClCompile Include="WilsonGenerator.cpp" />
+    <ClCompile Include="Board\PlayerBoard.cpp" />
+    <ClCompile Include="Generator\PrimGenerator.cpp" />
+    <ClCompile Include="Solver\Solver.cpp" />
+    <ClCompile Include="Generator\WilsonGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AStarSolver.h" />
-    <ClInclude Include="BFSSolver.h" />
-    <ClInclude Include="DFSGenerator.h" />
-    <ClInclude Include="DFSSolver.h" />
+    <ClInclude Include="Solver\AStarSolver.h" />
+    <ClInclude Include="Solver\BFSSolver.h" />
+    <ClInclude Include="Generator\DFSGenerator.h" />
+    <ClInclude Include="Solver\DFSSolver.h" />
     <ClInclude Include="DisjointSet.h" />
-    <ClInclude Include="Generator.h" />
-    <ClInclude Include="KruskalGenerator.h" />
-    <ClInclude Include="MachineBoard.h" />
+    <ClInclude Include="Generator\Generator.h" />
+    <ClInclude Include="Generator\KruskalGenerator.h" />
+    <ClInclude Include="Board\MachineBoard.h" />
     <ClInclude Include="MainFrame.h" />
-    <ClInclude Include="PlayerBoard.h" />
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="PrimGenerator.h" />
-    <ClInclude Include="Solver.h" />
-    <ClInclude Include="WilsonGenerator.h" />
+    <ClInclude Include="Board\PlayerBoard.h" />
+    <ClInclude Include="Board\Board.h" />
+    <ClInclude Include="Generator\PrimGenerator.h" />
+    <ClInclude Include="Solver\Solver.h" />
+    <ClInclude Include="Generator\WilsonGenerator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

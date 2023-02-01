@@ -12,22 +12,22 @@
 #include "MainFrame.h"
 
 // Boards
-#include "Board.h"
-#include "PlayerBoard.h"
-#include "MachineBoard.h"
+#include "Board/Board.h"
+#include "Board/PlayerBoard.h"
+#include "Board/MachineBoard.h"
 
 // Generators
-#include "Generator.h"
-#include "DFSGenerator.h"
-#include "KruskalGenerator.h"
-#include "PrimGenerator.h"
-#include "WilsonGenerator.h"
+#include "Generator/Generator.h"
+#include "Generator/DFSGenerator.h"
+#include "Generator/KruskalGenerator.h"
+#include "Generator/PrimGenerator.h"
+#include "Generator/WilsonGenerator.h"
 
 // Solvers
-#include "Solver.h"
-#include "DFSSolver.h"
-#include "BFSSolver.h"
-#include "AStarSolver.h"
+#include "Solver/Solver.h"
+#include "Solver/DFSSolver.h"
+#include "Solver/BFSSolver.h"
+#include "Solver/AStarSolver.h"
 
 #include <vector>
 

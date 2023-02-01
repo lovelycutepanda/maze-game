@@ -7,7 +7,7 @@
  */
 
 
-#include "MachineBoard.h"
+#include "../Board/MachineBoard.h"
 #include <vector>
 
 #ifndef SOLVER_H

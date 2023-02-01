@@ -14,8 +14,8 @@
 #endif
 
 #include <wx/wx.h>
-#include "Board.h"
-#include "Generator.h"
+#include "Board/Board.h"
+#include "Generator/Generator.h"
 #include <vector>
 
 class MainFrame : public wxFrame {

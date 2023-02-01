@@ -4,7 +4,7 @@
 #include "Generator.h"
 #include "KruskalGenerator.h"
 #include <vector>
-#include "DisjointSet.h"
+#include "../DisjointSet.h"
 #include <random>
 
 KruskalGenerator::KruskalGenerator(const int row, const int col) : Generator(row, col) {}
