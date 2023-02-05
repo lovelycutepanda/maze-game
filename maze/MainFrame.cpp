@@ -27,6 +27,7 @@
 #include "Solver/Solver.h"
 #include "Solver/DFSSolver.h"
 #include "Solver/BFSSolver.h"
+#include "Solver/GBFSSolver.h"
 #include "Solver/AStarSolver.h"
 
 #include <vector>
@@ -50,6 +51,8 @@ MainFrame::MainFrame() : wxFrame(NULL, wxID_ANY, "maze game"), board(NULL), row(
         "Solve the maze using depth-first search algorithm");
     menuSolve->Append(BFSSolve, "BFS",
         "Solve the maze using breadth-first search algorithm");
+    menuSolve->Append(GBFSSolve, "GBFS",
+        "Solve the maze using greedy best-first search algorithm");
     menuSolve->Append(AStarSolve, "A*",
         "Solve the maze using A* search algorithm");
 
@@ -79,6 +82,7 @@ MainFrame::MainFrame() : wxFrame(NULL, wxID_ANY, "maze game"), board(NULL), row(
     Bind(wxEVT_MENU, [=](wxCommandEvent&) {GenerateMaze(WilsonGeneration);}, WilsonGeneration);
     Bind(wxEVT_MENU, [=](wxCommandEvent&) {SolveMaze(DFSSolve);}, DFSSolve);
     Bind(wxEVT_MENU, [=](wxCommandEvent&) {SolveMaze(BFSSolve);}, BFSSolve);
+    Bind(wxEVT_MENU, [=](wxCommandEvent&) {SolveMaze(GBFSSolve);}, GBFSSolve);
     Bind(wxEVT_MENU, [=](wxCommandEvent&) {SolveMaze(AStarSolve);}, AStarSolve);
     Bind(wxEVT_MENU, &MainFrame::OnAbout, this, wxID_ABOUT);
 }
@@ -199,6 +203,9 @@ void MainFrame::SolveMaze(botID bot) {
         break;
     case (BFSSolve):
         solver = new BFSSolver(row, col, verticalBorder, horizontalBorder, (MachineBoard*)board);
+        break;
+    case (GBFSSolve):
+        solver = new GBFSSolver(row, col, verticalBorder, horizontalBorder, (MachineBoard*)board);
         break;
     case (AStarSolve):
         solver = new AStarSolver(row, col, verticalBorder, horizontalBorder, (MachineBoard*)board);

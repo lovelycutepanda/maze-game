@@ -1,31 +1,30 @@
-/* This is the implementation file for the A* search agent. */
+/* This is the implementation file for the Greedy Best-First search (GBFS) agent. */
 
 
 #include "Solver.h"
-#include "AStarSolver.h"
+#include "GBFSSolver.h"
 #include <vector>
 #include <queue> // priority_queue
 
-AStarSolver::AStarSolver(const int row, const int col, std::vector<std::vector<bool>>& verticalBorder, 
+GBFSSolver::GBFSSolver(const int row, const int col, std::vector<std::vector<bool>>& verticalBorder,
 						 std::vector<std::vector<bool>>& horizontalBorder, MachineBoard* board) : 
 						 Solver(row, col, verticalBorder, horizontalBorder, board) {
 	parent.resize(getRow(), std::vector<std::pair<int, int>>(getCol(), { -1, -1 }));
-	cost.resize(getRow(), std::vector<int>(getCol(), 0));
 }
 
-void AStarSolver::solve() {
+void GBFSSolver::solve() {
 	std::vector<std::pair<int, int>> path;
-	AStar();
+	GBFS();
 	backTrace(path);
 	move(path);
 }
 
-void AStarSolver::AStar() {
+void GBFSSolver::GBFS() {
 
 	// initialization
 	// in-line comparison function for priority queue
 	auto comp = [&](std::pair<int, int>& grid1, std::pair<int, int>& grid2) -> bool {
-		return minimizer(grid1) > minimizer(grid2);
+		return heuristic(grid1) > heuristic(grid2);
 	};
 	std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, 
 						decltype(comp)> grids (comp);
@@ -51,16 +50,13 @@ void AStarSolver::AStar() {
 
 			// mark parent of grid for back tracing
 			parent[newY][newX] = { posY, posX };
-
-			// mark cost of new grid, i.e. number of steps required to the grid
-			cost[newY][newX] = cost[posY][posX] + 1;
 		}
 	}
 	
 	return;
 }
 
-void AStarSolver::backTrace(std::vector<std::pair<int, int>>& path) {
+void GBFSSolver::backTrace(std::vector<std::pair<int, int>>& path) {
 
 	// trace back from goal
 	int posY = getRow() - 1, posX = getCol() - 1;
@@ -76,10 +72,7 @@ void AStarSolver::backTrace(std::vector<std::pair<int, int>>& path) {
 	std::reverse(path.begin(), path.end());
 }
 
-// minimizer is composed of heuristic value and total cost
-// for heuristic value we use vector L1 norm (Manhattan norm) distance, may replace by any norm
-int AStarSolver::minimizer(std::pair<int, int>& grid) {
-	int heuristic = getRow() - 1 - grid.first + getCol() - 1 - grid.second;
-	int visitCost = cost[grid.first][grid.second];
-	return heuristic + visitCost;
+// use vector L1 norm (Manhattan norm) distance as the heuristic function, may replace by any norm
+int GBFSSolver::heuristic(std::pair<int, int>& grid) {
+	return getRow() - 1 - grid.first + getCol() - 1 - grid.second;
 }

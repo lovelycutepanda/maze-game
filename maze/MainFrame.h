@@ -30,6 +30,7 @@ private:
         WilsonGeneration,
         DFSSolve,
         BFSSolve,
+        GBFSSolve,
         AStarSolve
     };
 

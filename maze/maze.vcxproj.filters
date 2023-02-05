@@ -78,6 +78,9 @@
     <ClCompile Include="DisjointSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Solver\GBFSSolver.cpp">
+      <Filter>Source Files\Solver</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainFrame.h">
@@ -121,6 +124,9 @@
     </ClInclude>
     <ClInclude Include="DisjointSet.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver\GBFSSolver.h">
+      <Filter>Header Files\Solver</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

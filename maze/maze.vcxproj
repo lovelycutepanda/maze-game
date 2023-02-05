@@ -157,6 +157,7 @@
     <ClCompile Include="MazeApp.cpp" />
     <ClCompile Include="Board\PlayerBoard.cpp" />
     <ClCompile Include="Generator\PrimGenerator.cpp" />
+    <ClCompile Include="Solver\GBFSSolver.cpp" />
     <ClCompile Include="Solver\Solver.cpp" />
     <ClCompile Include="Generator\WilsonGenerator.cpp" />
   </ItemGroup>
@@ -173,6 +174,7 @@
     <ClInclude Include="Board\PlayerBoard.h" />
     <ClInclude Include="Board\Board.h" />
     <ClInclude Include="Generator\PrimGenerator.h" />
+    <ClInclude Include="Solver\GBFSSolver.h" />
     <ClInclude Include="Solver\Solver.h" />
     <ClInclude Include="Generator\WilsonGenerator.h" />
   </ItemGroup>
